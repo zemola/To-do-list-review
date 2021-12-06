@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>To-do list</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <main>
+      <!-- Todo list header -->
+      <div class="general-wrapper">
+      <div class="title">
+        <h1 id="title-id">To-Do list</h1>
+        <span class="material-icons">autorenew</span>
+      </div>
+
+      <!-- Todo list input form -->
+      <div class="add-list">
+        <form class= "add-list-form">
+          <input class= "add-list-input" type="text" placeholder="Add to your list..." id="new-todo" />
+          <button
+            type="submit"
+            title="Click this or press enter to submit new todo">
+            <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+          </button>
+        </form>
+      </div>
+      
+      <!-- curent todo list -->
+      <ul class="to-do-list" data-lists></ul>
+      
+      <!-- Clear all todo list -->
+      <div class="clear-all">
+        <button type="button" class="clear-all-button">Clear all completed</button>
+      </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
