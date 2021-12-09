@@ -89,8 +89,8 @@ newListForm.addEventListener('submit', (e) => {
   handleSaveAndRender();
 });
 
-// Clear all completed todos upon click
-clearButton.addEventListener('click', () => {
+// Clear all completed todos upon clickn
+clearButton.addEventListener('submit', () => {
   clearAllCompletedTodos(localStorageTodos);
 });
 
